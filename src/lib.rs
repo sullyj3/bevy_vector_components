@@ -30,13 +30,13 @@ pub trait HasW {
 
 impl HasX for IVec2 {
     fn x_component(&self) -> Self {
-        IVec2::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for IVec2 {
     fn y_component(&self) -> Self {
-        IVec2::Y * self.y
+        self.y * Self::Y
     }
 }
 
@@ -46,19 +46,19 @@ impl HasY for IVec2 {
 
 impl HasX for IVec3 {
     fn x_component(&self) -> Self {
-        IVec3::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for IVec3 {
     fn y_component(&self) -> Self {
-        IVec3::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for IVec3 {
     fn z_component(&self) -> Self {
-        IVec3::Z * self.z
+        self.z * Self::Z
     }
 }
 
@@ -68,25 +68,25 @@ impl HasZ for IVec3 {
 
 impl HasX for IVec4 {
     fn x_component(&self) -> Self {
-        IVec4::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for IVec4 {
     fn y_component(&self) -> Self {
-        IVec4::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for IVec4 {
     fn z_component(&self) -> Self {
-        IVec4::Z * self.z
+        self.z * Self::Z
     }
 }
 
 impl HasW for IVec4 {
     fn w_component(&self) -> Self {
-        IVec4::W * self.w
+        self.w * Self::W
     }
 }
 
@@ -96,13 +96,13 @@ impl HasW for IVec4 {
 
 impl HasX for UVec2 {
     fn x_component(&self) -> Self {
-        UVec2::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for UVec2 {
     fn y_component(&self) -> Self {
-        UVec2::Y * self.y
+        self.y * Self::Y
     }
 }
 
@@ -112,19 +112,19 @@ impl HasY for UVec2 {
 
 impl HasX for UVec3 {
     fn x_component(&self) -> Self {
-        UVec3::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for UVec3 {
     fn y_component(&self) -> Self {
-        UVec3::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for UVec3 {
     fn z_component(&self) -> Self {
-        UVec3::Z * self.z
+        self.z * Self::Z
     }
 }
 
@@ -134,25 +134,25 @@ impl HasZ for UVec3 {
 
 impl HasX for UVec4 {
     fn x_component(&self) -> Self {
-        UVec4::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for UVec4 {
     fn y_component(&self) -> Self {
-        UVec4::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for UVec4 {
     fn z_component(&self) -> Self {
-        UVec4::Z * self.z
+        self.z * Self::Z
     }
 }
 
 impl HasW for UVec4 {
     fn w_component(&self) -> Self {
-        UVec4::W * self.w
+        self.w * Self::W
     }
 }
 
@@ -162,13 +162,13 @@ impl HasW for UVec4 {
 
 impl HasX for Vec2 {
     fn x_component(&self) -> Self {
-        Vec2::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for Vec2 {
     fn y_component(&self) -> Self {
-        Vec2::Y * self.y
+        self.y * Self::Y
     }
 }
 
@@ -178,19 +178,19 @@ impl HasY for Vec2 {
 
 impl HasX for Vec3 {
     fn x_component(&self) -> Self {
-        Vec3::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for Vec3 {
     fn y_component(&self) -> Self {
-        Vec3::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for Vec3 {
     fn z_component(&self) -> Self {
-        Vec3::Z * self.z
+        self.z * Self::Z
     }
 }
 
@@ -200,34 +200,24 @@ impl HasZ for Vec3 {
 
 impl HasX for Vec4 {
     fn x_component(&self) -> Self {
-        Vec4::X * self.x
+        self.x * Self::X
     }
 }
 
 impl HasY for Vec4 {
     fn y_component(&self) -> Self {
-        Vec4::Y * self.y
+        self.y * Self::Y
     }
 }
 
 impl HasZ for Vec4 {
     fn z_component(&self) -> Self {
-        Vec4::Z * self.z
+        self.z * Self::Z
     }
 }
 
 impl HasW for Vec4 {
     fn w_component(&self) -> Self {
-        Vec4::W * self.w
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        assert_eq!(Vec2::new(1.0, 1.0).x_component(), Vec2::new(1.0, 0.0));
+        self.w * Self::W
     }
 }
