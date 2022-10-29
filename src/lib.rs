@@ -1,19 +1,27 @@
-use bevy::math::prelude::*;
+use glam::*;
 
 pub trait HasX {
-    fn x_component(&self) -> Self where Self: Sized;
+    fn x_component(&self) -> Self
+    where
+        Self: Sized;
 }
 
 pub trait HasY {
-    fn y_component(&self) -> Self where Self: Sized;
+    fn y_component(&self) -> Self
+    where
+        Self: Sized;
 }
 
 pub trait HasZ {
-    fn z_component(&self) -> Self where Self: Sized;
+    fn z_component(&self) -> Self
+    where
+        Self: Sized;
 }
 
 pub trait HasW {
-    fn w_component(&self) -> Self where Self: Sized;
+    fn w_component(&self) -> Self
+    where
+        Self: Sized;
 }
 
 //
