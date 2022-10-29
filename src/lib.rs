@@ -1,18 +1,18 @@
 use bevy::math::prelude::*;
 
-trait HasX {
+pub trait HasX {
     fn x_component(&self) -> Self where Self: Sized;
 }
 
-trait HasY {
+pub trait HasY {
     fn y_component(&self) -> Self where Self: Sized;
 }
 
-trait HasZ {
+pub trait HasZ {
     fn z_component(&self) -> Self where Self: Sized;
 }
 
-trait HasW {
+pub trait HasW {
     fn w_component(&self) -> Self where Self: Sized;
 }
 
